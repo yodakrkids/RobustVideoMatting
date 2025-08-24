@@ -1,0 +1,40 @@
+# VideoMatte/1/
+(echo "=== Processing Video 1 - Sony Lens Test ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/1/Sony_Lens_Test.mp4" --output-type video --output-composition "output/output_1_Sony_Lens_Test.mp4" && echo "End Time: $(date)" > output/log_1_Sony_Lens_Test.txt 2>&1
+
+# VideoMatte/2/
+(echo "=== Processing Video 2 - Sample Footage ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/2/Sample_footage_.mp4" --output-type video --output-composition "output/output_2_Sample_footage.mp4" && echo "End Time: $(date)" > output/log_2_Sample_footage.txt 2>&1
+
+# VideoMatte/3/
+(echo "=== Processing Video 3 - Sony FR7 ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/3/Sony_FR7__Cinem.MP4" --output-type video --output-composition "output/output_3_Sony_FR7.mp4" && echo "End Time: $(date)" > output/log_3_Sony_FR7.txt 2>&1
+
+# VideoMatte/4/
+(echo "=== Processing Video 4 - ASO Japan 8K ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/4/ASO_JAPAN_8K_-_.MP4" --output-type video --output-composition "output/output_4_ASO_JAPAN_8K.mp4" && echo "End Time: $(date)" > output/log_4_ASO_JAPAN_8K.txt 2>&1
+
+# VideoMatte/5/
+(echo "=== Processing Video 5 - 4K Sample ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/5/4K_Sample_Video.mp4" --output-type video --output-composition "output/output_5_4K_Sample.mp4" && echo "End Time: $(date)" > output/log_5_4K_Sample.txt 2>&1
+
+# VideoMatte/6/
+(echo "=== Processing Video 6 - Sample Footage ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/6/Sample_Footage_.MP4" --output-type video --output-composition "output/output_6_Sample_Footage.mp4" && echo "End Time: $(date)" > output/log_6_Sample_Footage.txt 2>&1
+
+# VideoMatte/7/
+(echo "=== Processing Video 7 - Sony HDC ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/7/Sony___HDC-F550.mp4" --output-type video --output-composition "output/output_7_Sony_HDC.mp4" && echo "End Time: $(date)" > output/log_7_Sony_HDC.txt 2>&1
+
+# VideoMatte/8/
+(echo "=== Processing Video 8 - S7Edge ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/8/S7Edge__Zhiyun_.MP4" --output-type video --output-composition "output/output_8_S7Edge.mp4" && echo "End Time: $(date)" > output/log_8_S7Edge.txt 2>&1
+
+# VideoMatte/9/
+(echo "=== Processing Video 9 - Man Utd ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/9/4K__Man_Utd._Vs.MP4" --output-type video --output-composition "output/output_9_Man_Utd.mp4" && echo "End Time: $(date)" > output/log_9_Man_Utd.txt 2>&1
+
+# VideoMatte/10/
+(echo "=== Processing Video 10 - TWICE BDZ ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/10/TWICE_-_BDZKore.MP4" --output-type video --output-composition "output/output_10_TWICE_BDZ.mp4" && echo "End Time: $(date)" > output/log_10_TWICE_BDZ.txt 2>&1
+
+# VideoMatte/11/ (2개 파일)
+(echo "=== Processing Video 11a - PEACE ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/11/170903_PEACE_MA.MP4" --output-type video --output-composition "output/output_11a_PEACE.mp4" && echo "End Time: $(date)" > output/log_11a_PEACE.txt 2>&1
+
+(echo "=== Processing Video 11b - YOUTH ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/11/A.YOUTH____Kiss.MP4" --output-type video --output-composition "output/output_11b_YOUTH.mp4" && echo "End Time: $(date)" > output/log_11b_YOUTH.txt 2>&1
+
+# VideoMatte/12/
+(echo "=== Processing Video 12 - BTS ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/12/_Beagles___BTS_.MP4" --output-type video --output-composition "output/output_12_BTS.mp4" && echo "End Time: $(date)" > output/log_12_BTS.txt 2>&1
+
+# VideoMatte/13/
+(echo "=== Processing Video 13 - Gemini Man ===" && echo "Start Time: $(date)" && nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total --format=csv,noheader,nounits | awk '{print "GPU Util: "$1"% | VRAM: "$2"/"$3" MB"}') && python inference.py --variant mobilenetv3 --checkpoint model/rvm_mobilenetv3.pth --device cuda --input-source "VideoMatte/13/Gemini_Man_4K.mp4" --output-type video --output-composition "output/output_13_Gemini_Man.mp4" && echo "End Time: $(date)" > output/log_13_Gemini_Man.txt 2>&1
