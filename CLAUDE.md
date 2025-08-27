@@ -31,6 +31,7 @@ python webcam_demo.py
 - Frame chunk: 1-12
 
 ## Claude Instructions
+- 한국어로 대답하기
 - Minimize natural language explanations
 - Provide code and technical answers only
 - Use concise responses
