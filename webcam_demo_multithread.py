@@ -330,10 +330,14 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, args.width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, args.height)
     
-    # 실제 설정된 해상도 확인
+    # 웹캠 FPS 강제 설정
+    cap.set(cv2.CAP_PROP_FPS, 60)
+    
+    # 실제 설정된 값들 확인
     actual_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     actual_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    print(f"✓ 웹캠 초기화 완료 (실제 해상도: {actual_width}x{actual_height})")
+    actual_fps = cap.get(cv2.CAP_PROP_FPS)
+    print(f"✓ 웹캠 초기화 완료 (실제 해상도: {actual_width}x{actual_height}, FPS: {actual_fps})")
 
     # 배경 이미지 로드
     background_images = []
@@ -376,7 +380,7 @@ def main():
     stop_event = threading.Event()
     
     # 공유 변수 (참조 전달용)
-    display_mode_ref = [0]  # 비교 모드
+    display_mode_ref = [2]  # matte 모드 (0: 비교, 1: 결과만, 2: matte만)
     background_mode_ref = [0]  # 투명 배경
 
     # 스레드 시작
